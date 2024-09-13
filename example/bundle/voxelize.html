@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>three-mesh-bvh - Geometry Voxelization</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <style type="text/css">
+        html, body {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+			font-family: monospace;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%;
+        }
+
+		#model-info {
+			color: white;
+			position: absolute;
+			left: 10px;
+			bottom: 10px;
+			opacity: 0.5;
+		}
+
+		#output {
+			white-space: pre;
+			margin-bottom: 10px;
+		}
+
+		#info {
+			top: 0;
+			width: 100%;
+			pointer-events: none;
+			position: absolute;
+			color: white;
+			font-family: monospace;
+			text-align: center;
+			padding: 5px 0;
+		}
+    </style>
+  <script type="module" crossorigin src="./assets/voxelize-DutdC9Hh.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/ExtendedTriangle-Chm2bbkR.js">
+  <link rel="modulepreload" crossorigin href="./assets/BufferGeometryUtils-Cscy-pCt.js">
+  <link rel="modulepreload" crossorigin href="./assets/GLTFLoader-Dl6abS6P.js">
+  <link rel="modulepreload" crossorigin href="./assets/meshopt_decoder.module-Cf1-17OU.js">
+  <link rel="modulepreload" crossorigin href="./assets/_commonjsHelpers-Cpj98o6Y.js">
+  <link rel="modulepreload" crossorigin href="./assets/stats.min-GTpOrGrX.js">
+  <link rel="modulepreload" crossorigin href="./assets/lil-gui.module.min-Bc0DeA9g.js">
+  <link rel="modulepreload" crossorigin href="./assets/OrbitControls-lzJCl7xY.js">
+  <link rel="modulepreload" crossorigin href="./assets/RoundedBoxGeometry-BW68IL6j.js">
+  <link rel="modulepreload" crossorigin href="./assets/MeshBVH-CPVAl5W3.js">
+  <link rel="modulepreload" crossorigin href="./assets/GenerateMeshBVHWorker-B43A4fin.js">
+</head>
+<body>
+	<div id="info">
+		Demonstration of voxelizing a mesh with the ability to detect the inside and outside of a model.
+	</div>
+	<div id="model-info">
+		<div id="output"></div>
+	</div>
+</body>
+</html>
